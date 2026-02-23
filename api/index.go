@@ -20,7 +20,7 @@ var usersRepository = users.NewUsersRepository()
 var sessionsRepository = users.NewSessionsRepository()
 var tasksRepository = tasks.NewTasksRepository()
 
-func main() {
+func Handler() {
 	mux := http.NewServeMux()
 
 	taskHandler(mux)
